@@ -113,10 +113,13 @@ function App() {
         </div>
         <div className="Contact" id="Contact" >
           <h3>Contactos</h3>
+          {/*
           <span onClick={clipboardData} ><img src={allIcons.Gmail} alt="Gmail" width="50px" /> &nbsp; {gmail ? <a className={gmail ? "whitBackground" : "noneBackground"} >El Gmail fue copiado en el portapapeles: brayangaitan81@gmail.com</a> : ""}</span>
+          */}
           <div>
-            <a href="" alt="LinkedIn" target="_blank" rel="noreferrer" ><img src={allIcons.LinkedIn} alt="LinkedIn" width="50px" /></a>
-            <a href="" alt="GitHub" target="_blank" rel="noreferrer" ><img src={allIcons.GitHub} alt="GitHub" width="50px" /></a>
+          <a href="mailto:brayangaitan81@gmail.com" target="_blank" rel="noreferrer" ><img src={allIcons.Gmail} alt="Gmail" width="50px" /></a>
+            <a href="https://www.linkedin.com/in/bryan-gaitan-0ba256119/" alt="LinkedIn" target="_blank" rel="noreferrer" ><img src={allIcons.LinkedIn} alt="LinkedIn" width="50px" /></a>
+            <a href="https://github.com/brstevenn" alt="GitHub" target="_blank" rel="noreferrer" ><img src={allIcons.GitHub} alt="GitHub" width="50px" /></a>
           </div>
         </div>
     </div>
