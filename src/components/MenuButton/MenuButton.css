@@ -1,0 +1,20 @@
+.MenuButtonWrapper {
+    position: fixed;
+    border: none;
+    margin-top: 1.3rem;
+    right: 0px;
+    background-color: rgb(14, 22, 22);
+    width: 15%;
+    height: 55px;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+
+  @media only screen and (min-width: 624px) {
+    display: none;
+  }
+}
+
+.MenuButtonWrapper svg:hover {
+  cursor: pointer;
+}

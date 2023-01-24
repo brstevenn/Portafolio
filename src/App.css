@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+  background-color: rgb(255, 255, 255);
+  background-image: url("./assets/images/figuras.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Oswald', sans-serif;
+  color: #000000;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.respmenu a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 2px solid #456789;
+  max-width: 200px;
+  background: #234567;
+  font-variant: small-caps;
+  text-shadow: 1px 1px black;
+}
+
+.AboutMe {
+  text-align: center;
+}
+
+.AboutMe h3 {
+  font-size: 40px;
+  margin: 20px 0px 20px 0px;
+  background-color: #ffffff;
+  width: max-content;
+  display: -webkit-inline-box;
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+}
+
+.Resumen {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Resumen span {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  font-size: 30px;
+  margin: 5px 10px 20px 60px;
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: justify;
+  border-radius: 5%;
+}
+
+.Resumnen-p h4 {
+  margin: 0px 5px 20px 0px;
+}
+
+.Resumen a:hover {
+  cursor: default;
+}
+
+.Resumen img:hover {
+  cursor: pointer;
+}
+
+.LinkedInProfile {
+  border-radius: 5%;
+  width: 50%;
+}
+
+.Proyectos {
+  display: grid;
+  grid-template-columns: 1fr 16fr 1fr;
+  align-items: center;
+}
+
+.Prev {
+  font-size: 100px;
+  border: none;
+  background-color: transparent;
+}
+.Prev:hover {
+  cursor: pointer;
+}
+.Next {
+  font-size: 100px;
+  border: none;
+  background-color: transparent;
+}
+.Next:hover {
+  cursor: pointer;
+}
+.Contact h3 {
+  font-size: 40px;
+  margin: 20px 0px 20px 0px;
+  background-color: #ffffff;
+  width: max-content;
+  display: -webkit-inline-box;
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+}
+.Contact span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: red;
+}
+.Contact span:hover {
+  cursor: pointer;
+}
+.Contact div {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  gap: 10px;
+}
+
+.whitBackground {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
