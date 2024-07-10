@@ -1,0 +1,82 @@
+.containerCarouser {
+    margin: 0px 40px 30px 40px;
+}
+.proyectName {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.proyectName h2 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+}
+.containerProyect {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cointainerImage {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.cointainerImage img {
+    margin: 20px 20px 20px 20px;
+    border-radius: 5%;
+}
+/*
+.imageProyect {
+
+}*/
+.descriptionProyect {
+    text-align: justify;
+}
+.tecnologiesProyect {
+    border-radius: 5%;
+}
+.tecnologiesProyect p {
+    background-color: white;
+    border-radius: 5%;
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.containerTecnologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 5px 20px 20px 20px;
+    border-radius: 15px;
+    padding: 15px;
+    gap: 20px;
+}
+
+.proyectButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.Deploy {
+    font-size: 30px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+}
+.Deploy:hover {
+    cursor: pointer;
+}
+.GitHub {
+    font-size: 30px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+}
+.GitHub:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,43 @@
+.typewriterContainer {
+  text-align: start;
+}
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    position: relative;
+    text-shadow: 0px 0px 10px var(--primary-color), 0 0 0.3em var(--primary-color), 0 0 0.2em var(--primary-color);
+    color: var(--text-primary-color);
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    text-align: start;
+  }
+  
+  .typewriter::after {
+    content: '|';
+    position: absolute;
+    right: 0;
+    animation: blink-caret 1s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #00000000;
+    }
+  }
+  

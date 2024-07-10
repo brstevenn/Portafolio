@@ -1,0 +1,20 @@
+.section-footer-container {
+    display: flex;
+    height: 100%;
+    align-items: end;
+}
+
+.section-footer {
+    width: 100%;
+    background-color: var(--primary-color);
+    position: sticky;
+    height: fit-content;
+}
+
+.section-content {
+    height: max-content;
+    padding: 1%;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    margin: 0%;
+}

@@ -1,0 +1,15 @@
+@import "../../../index.css";
+
+.NavbarWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.NavbarWrapper a {
+  font-size: 30px;
+  padding: 0.5rem 0.8rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: 'Libre Baskerville', serif;
+}

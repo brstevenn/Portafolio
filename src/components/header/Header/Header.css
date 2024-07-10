@@ -1,0 +1,17 @@
+@import "../../../index.css";
+
+.HeaderWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: max-content;
+    position: absolute;
+    width: 100%;
+}
+
+.modesButtons {
+    display: flex;
+    justify-content: end;
+    margin: 0% 1%;
+}

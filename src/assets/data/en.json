@@ -1,3 +1,15 @@
 {
-  "navbar": ["Habilities", "Proyects", "Contact"]
+  "secciones": ["Skills", "Projects", "Contact", "Let's connect"],
+  "saludo": "Hello!",
+  "presentacion": "I am",
+  "presentacionDinamica": ["Bryan Gaitan", "A Full Stack Developer"],
+  "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "frases": [
+    "</> My focus in development is always code quality and performance, and I strive to follow best practices and trends in web development. </>",
+    "</> I am constantly looking to learn new skills and technologies to improve my work and deliver cutting-edge solutions to my clients and employers. </>",
+    "</> Would you like to work together? Do you need a Full Stack in your team? Contact me with your proposal, I'd be happy to hear from you! </>"
+  ],
+  "tecnologias": ["Frontend", "Backend", "Databases", "Tools" ],
+  "contacto": ["First name", "Last name", "Email", "Write your message here" ],
+  "adicional": ["Send", "Download my cv", "*I will be answering within 24hrs"]
 }

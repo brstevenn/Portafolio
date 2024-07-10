@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { LanguageProvider } from "./components/common/LanguageContext/LanguageContext"
 import './index.css';
 
 const container = document.getElementById('root');
@@ -11,9 +12,9 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <LanguageProvider>
       <App />
-    </Provider>
+    </LanguageProvider>
   </React.StrictMode>
 );
 

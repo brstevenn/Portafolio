@@ -1,3 +1,15 @@
 {
-  "navbar": ["Habilidades", "Proyectos", "Contacto"]
+  "secciones": ["Habilidades", "Proyectos", "Contacto", "Conectemos"],
+  "saludo": "Hola!",
+  "presentacion": "Soy",
+  "presentacionDinamica": ["Bryan Gaitan", "Un Desarrollador Full Stack"],
+  "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "frases": [
+    "</>Mi enfoque en el desarrollo es siempre la calidad del código y el rendimiento, y me esfuerzo por seguir las mejores prácticas y tendencias en el desarrollo web.</>",
+    "</>Estoy constantemente buscando aprender nuevas habilidades y tecnologías para mejorar mi trabajo y ofrecer soluciones de vanguardia a mis clientes y empleadores. </>",
+    "</> Te gustaria que trabajaramos juntos? Necesitas un Full Stack en tu equipo? Contactame con tu propuesta, estare encantado de escucharla! </>"
+  ],
+  "tecnologias": ["Frontend", "Backend", "Bases de datos", "Herramientas"],
+  "contacto": ["Nombre", "Apellido", "Email", "Escribe aqui tu mensaje"],
+  "adicional": ["Enviar", "Descarga mi cv", "*Estare respondiendo en un lapso de 24hrs"]
 }

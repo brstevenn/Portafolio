@@ -1,16 +1,19 @@
-import React from 'react';
-import Header from './components/Header/Header';
-import Carousel from './components/Carousel/Carousel';
-import Button from './components/SharedComponents/Button/Button';
+import React, { useEffect, useState } from 'react';
+import Header from './components/header/Header/Header';
+import About from "./components/section/About/About";
+import Carousel from './components/section/Carousel/Carousel';
+import Button from './components/common/Button/Button';
 import profilePhoto from "./assets/images/IMG20221101114758.jpg";
 import {
   allImages,
   deploy,
   gitHub,
   description,
-  tecnologies} from "./components/SharedComponents/strings"
+  tecnologies
+} from "./components/common/strings"
 import * as allIcons from "./assets/icons/icons.js"
 import './App.css';
+import Habilities from './components/section/Habilities/Habilities';
 
 function App() {
   const [actual, setActual] = React.useState(0)
@@ -31,30 +34,30 @@ function App() {
       setActualDescription(description[data])
       setActualTecnologies(tecnologies[data])
     }
-    if(event.target.id === "Prev"){
-      if(actual === 0) {
+    if (event.target.id === "Prev") {
+      if (actual === 0) {
         setActual(3)
         functionSet(3)
       }
-      if(actual > 0){
+      if (actual > 0) {
         setActual(actual - 1)
         functionSet(actual - 1)
       }
-      if(actual < 3 && actual > 0) {
+      if (actual < 3 && actual > 0) {
         setActual(actual - 1)
         functionSet(actual - 1)
       }
     }
-    if(event.target.id === "Next"){
-      if(actual === 0) {
+    if (event.target.id === "Next") {
+      if (actual === 0) {
         setActual(1)
         functionSet(1)
       }
-      if(actual >= 3) {
+      if (actual >= 3) {
         setActual(0)
         functionSet(0)
       }
-      if(actual > 0 && actual < 3) {
+      if (actual > 0 && actual < 3) {
         setActual(actual + 1)
         functionSet(actual + 1)
       }
@@ -88,40 +91,73 @@ function App() {
     setGmail(true)
   }
 
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll);
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
+  }, []);
+
+  const screenHeight = window.innerHeight;
+
   return (
     <div className="App">
-        <Header />
-        <div className="AboutMe" id="AboutMe" >
-          <h3>Sobre mi</h3>
-          <div className='Resumen'>
-            <span className='Resumnen-p' >
-              <h4>Hola mi nombre es Bryan Gaitan.</h4>
-              Soy un programador Full Stack con experiencia en JavaScript, 
-              React, Node, PostgreSQL, MongoDB y varias librerías relacionadas. 
-              Mi enfoque es siempre la calidad del código y el rendimiento, 
+      <Header />
+      <About />
+      <Habilities id="Skills" />
+      {
+        scrollY > screenHeight - 10 &&
+        <Button id="go-to-up" style="go-to-up" content={"Up"} onClick={(event) => window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        })} />
+      }
+
+      <div className="AboutMe" id="AboutMe" >
+        <h3>Sobre mi</h3>
+        <div className='Resumen'>
+          <span className='Resumnen-p' >
+            <h4>Hola mi nombre es Bryan Gaitan.</h4>
+            <p>
+              Soy un programador Full Stack con experiencia en JavaScript,
+              React, Node, PostgreSQL, MongoDB y varias librerías relacionadas.
+              Mi enfoque es siempre la calidad del código y el rendimiento,
               me gusta trabajar en equipo y estoy constantemente aprendiendo nuevas habilidades y tecnologías.
-            </span>
-            <a href="https://www.linkedin.com/in/bryan-gaitan-0ba256119/" alt="LinkedIn" target="_blank" rel="noreferrer" >
+            </p>
+          </span>
+          <span>
+            <a className='Resumen-image' href="https://www.linkedin.com/in/bryan-gaitan-0ba256119/" alt="LinkedIn" target="_blank" rel="noreferrer" >
               <img className="LinkedInProfile" src={profilePhoto} alt="ProfilePhoto" />
             </a>
-          </div> 
+          </span>
         </div>
+      </div>
+      {/*
         <div className="Proyectos" id="Proyects" >
           <Button id="Prev" class="Prev" onClick={handleClick} content="<" />
           <Carousel component="ul" leftPadding={100} focus={0} actual={image} deploy={actualDeploy} gitHub={actualGitHub} description={actualDescription} tecnologies={actualTecnologies} />
           <Button id="Next" class="Next" onClick={handleClick} content=">" />
         </div>
-        <div className="Contact" id="Contact" >
-          <h3>Contactos</h3>
-          {/*
+        */}
+      <div className="Contact" id="Contact" >
+        <h3>Contactos</h3>
+        {/*
           <span onClick={clipboardData} ><img src={allIcons.Gmail} alt="Gmail" width="50px" /> &nbsp; {gmail ? <a className={gmail ? "whitBackground" : "noneBackground"} >El Gmail fue copiado en el portapapeles: brayangaitan81@gmail.com</a> : ""}</span>
           */}
-          <div>
+        <div>
           <a href="mailto:brayangaitan81@gmail.com" target="_blank" rel="noreferrer" ><img src={allIcons.Gmail} alt="Gmail" width="50px" /></a>
-            <a href="https://www.linkedin.com/in/bryan-gaitan-0ba256119/" alt="LinkedIn" target="_blank" rel="noreferrer" ><img src={allIcons.LinkedIn} alt="LinkedIn" width="50px" /></a>
-            <a href="https://github.com/brstevenn" alt="GitHub" target="_blank" rel="noreferrer" ><img src={allIcons.GitHub} alt="GitHub" width="50px" /></a>
-          </div>
+          <a href="https://www.linkedin.com/in/bryan-gaitan-0ba256119/" alt="LinkedIn" target="_blank" rel="noreferrer" ><img src={allIcons.LinkedIn} alt="LinkedIn" width="50px" /></a>
+          <a href="https://github.com/brstevenn" alt="GitHub" target="_blank" rel="noreferrer" ><img src={allIcons.GitHub} alt="GitHub" width="50px" /></a>
         </div>
+      </div>
     </div>
   );
 }
