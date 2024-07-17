@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Navbar from "../Navbar/Navbar";
 import { LanguageContext } from "../../common/LanguageContext/LanguageContext";
 import Button from "../../common/Button/Button";
-import logo from "../../../assets/icons/logo.svg";
+import { Logo } from "../../../assets/icons/icons";
 import traslate from "../../../assets/icons/traslate.svg";
 import mode from "../../../assets/icons/mode.svg"
 import Image from "../../common/Image/Image"
@@ -22,7 +22,7 @@ function Header() {
 
   return (
     <header className="HeaderWrapper">
-      <Image image={logo} width={"40px"} style={"Logo"}/>
+      <Image image={Logo} width={"40px"} style={"Logo"}/>
       <Navbar />
       <div className="modesButtons" >
         <Button

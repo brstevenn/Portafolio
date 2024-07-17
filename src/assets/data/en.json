@@ -9,7 +9,7 @@
     "</> I am constantly looking to learn new skills and technologies to improve my work and deliver cutting-edge solutions to my clients and employers. </>",
     "</> Would you like to work together? Do you need a Full Stack in your team? Contact me with your proposal, I'd be happy to hear from you! </>"
   ],
-  "tecnologias": ["Frontend", "Backend", "Databases", "Tools" ],
+  "tecnologias": ["React", "NextJS", "DotNet", "NodeJS", "MongoDB", "PostgreSQL", "JavaScript", "CSharp", "Python", "SQLServer"],
   "contacto": ["First name", "Last name", "Email", "Write your message here" ],
   "adicional": ["Send", "Download my cv", "*I will be answering within 24hrs"]
 }

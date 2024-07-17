@@ -5,6 +5,7 @@ import about from "../../../assets/images/about.png"
 import TextAnimation from "./TextAnimation"
 import "./About.css"
 import SectionFooter from "../../common/SectionFooter/SectionFooter";
+import * as allIcons from "../../../assets/icons/icons"
 
 function About() {
   const { language, data, changeLanguage } = useContext(LanguageContext);
@@ -21,14 +22,21 @@ function About() {
   return (
     <section className="section">
       <div className="about">
+        <div>
+          <p className="greet">{data.saludo.toUpperCase()}</p>
+          <TextAnimation textDefault={data.presentacion} texts={data.presentacionDinamica}/>
+          <p className="desciption">{data.descripcion}</p>
+        </div>
       <div>
-        <p className="greet">{data.saludo.toUpperCase()}</p>
-        <TextAnimation textDefault={data.presentacion} texts={data.presentacionDinamica}/>
-        <p className="desciption">Soy un programador Full Stack con experiencia en JavaScript, React, Node, PostgreSQL, MongoDB y varias librerías relacionadas. Mi enfoque es siempre la calidad del código y el rendimiento, me gusta trabajar en equipo y estoy constantemente aprendiendo nuevas habilidades y tecnologías.</p>
+        <Image image={about} width={"80%"} />
+        <div className="contact" >
+          <a href="mailto:brayangaitan81@gmail.com" target="_blank" rel="noreferrer" ><img src={allIcons.Gmail} alt="Gmail" width="50px" /></a>
+          <a href="https://www.linkedin.com/in/bryan-gaitan-0ba256119/" alt="LinkedIn" target="_blank" rel="noreferrer" ><img src={allIcons.LinkedIn} alt="LinkedIn" width="50px" /></a>
+          <a href="https://github.com/brstevenn" alt="GitHub" target="_blank" rel="noreferrer" ><img src={allIcons.GitHub} alt="GitHub" width="50px" /></a>
+        </div>
       </div>
-      <Image image={about} width={"100%"} />
       </div>
-      <SectionFooter content={data.frases[0]} />
+      <SectionFooter content={data.frases} interval={12} />
     </section>
   );
 }

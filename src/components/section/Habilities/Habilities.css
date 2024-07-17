@@ -1,10 +1,11 @@
 .habilities {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1.5fr 1fr;
   margin: 0% 5% 0% 5%;
   height: 100%;
   place-items: center;
   place-content: center;
+  gap: 50px;
 }
 
 .habilitiesTitleContainer {
@@ -26,16 +27,22 @@
 .habilitiesContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
   place-items: center;
   place-content: center;
-  width: 100%;
+  width: 90%;
+  background-color: #540892af;
+  border-top-right-radius: 45%;
+  border-bottom-right-radius: 25%;
+  padding-bottom: 15px;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
 }
 
 .subHabilitiesContainer {
   display: grid;
   grid-template-rows: 70px 1fr;
   grid-template-columns: 1fr;
+  padding: 10px;
 }
 
 .habilitiesTitle {

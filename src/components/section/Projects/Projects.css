@@ -1,0 +1,14 @@
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  margin: 0% 5% 0% 5%;
+  height: 100%;
+  place-items: center;
+  place-content: center;
+}
+
+.projectsTitleContainer {
+  place-content: center;
+  display: grid;
+  place-items: center;
+}
