@@ -4,6 +4,7 @@ import projects from "../../../assets/images/projects.png"
 import "./Projects.css";
 import SectionFooter from "../../common/SectionFooter/SectionFooter";
 import Image from "../../common/Image/Image";
+import CURRENTS_PROJECTS from "../../../assets/images/projects/projects";
 
 function Projects({ id }) {
   const { language, data, changeLanguage } = useContext(LanguageContext);
@@ -17,8 +18,21 @@ function Projects({ id }) {
         </div>
         <div>
           {
-            data && data.proyectos_recientes && <div>
+            data && data.proyectos_recientes &&
+            <div>
               <h1 className="sectionTitle">{data.proyectos_recientes.titulo.toUpperCase()}</h1>
+              <p>{data.proyectos_recientes.label}</p>
+              {
+                data.proyectos_recientes && data.proyectos_recientes.content &&
+                <div>
+                {Object.entries(data.proyectos_recientes.content).map(([key, value]) => (
+                  <div>
+                    {console.log(key)}
+                    <Image image={CURRENTS_PROJECTS[key]} width={"100%"} />
+                  </div>
+                ))}
+                </div>
+              }
             </div>
           }
         </div>

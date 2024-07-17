@@ -16,6 +16,23 @@
   "proyectos_recientes": {
     "titulo": "Proyectos recientes",
     "label": "",
-    "content": [1, 2, 3, 4]
+    "content": {
+      "1": {
+        "name": "Graphic generator",
+        "description": ""
+      },
+      "2": {
+        "name": "Whatsapp Bot",
+        "description": ""
+      },
+      "3": {
+        "name": "F1 UDP",
+        "description": ""
+      },
+      "4": {
+        "name": "CecodesAPP",
+        "description": ""
+      }
+    }
   }
 }
