@@ -3,13 +3,37 @@
   "saludo": "Hello!",
   "presentacion": "I am",
   "presentacionDinamica": ["Bryan Gaitan", "A Full Stack Developer"],
-  "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "descripcion": "Developer with experience in JS (React, NextJS) and C# (ASP.NET), I have worked in both Frontend and Backend with both languages, integrating SQL databases such as SQL Sever, PostgreSQL and MySQL.",
   "frases": [
     "</> My focus in development is always code quality and performance, and I strive to follow best practices and trends in web development. </>",
     "</> I am constantly looking to learn new skills and technologies to improve my work and deliver cutting-edge solutions to my clients and employers. </>",
     "</> Would you like to work together? Do you need a Full Stack in your team? Contact me with your proposal, I'd be happy to hear from you! </>"
   ],
-  "tecnologias": ["Frontend", "Backend", "Databases", "Tools" ],
-  "contacto": ["First name", "Last name", "Email", "Write your message here" ],
-  "adicional": ["Send", "Download my cv", "*I will be answering within 24hrs"]
+  "tecnologias": ["React", "NextJS", "DotNet", "NodeJS", "MongoDB", "PostgreSQL", "JavaScript", "CSharp", "Python", "SQLServer"],
+  "contacto": ["First name", "Last name", "Email", "Write your message here", "Message"],
+  "contactoPlaceHolder": ["Enter your"],
+  "adicional": ["Send", "Download my cv", "*I will be answering within 24hrs"],
+  "experiencia": "Cuento con experiencia trabajando con <p></p>",
+  "proyectos_recientes": {
+    "titulo": "Recent projects",
+    "label": "",
+    "content": {
+      "1": {
+        "name": "Graph generator",
+        "description": "This application is responsible for generating images based on HTML content whose content is obtained from a database, also works in sync with the whatsapp bot that is responsible for sending images to a corresponding user by whatsapp."
+      },
+      "2": {
+        "name": "WhatsApp Bot",
+        "description": "This is in charge of sending automated or specific messages, sending both text and images to specific users."
+      },
+      "3": {
+        "name": "Specific JSON reader App",
+        "description": "This app is in charge of reading JSON coming from the socket.io connection."
+      },
+      "4": {
+        "name": "App carbon emissions",
+        "description": "This app calculates carbon emissions based on information provided by users."
+      }
+    }
+  }
 }

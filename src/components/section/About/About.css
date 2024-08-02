@@ -33,3 +33,19 @@
     text-align: justify;
     margin: 20px 30px 0px 0px;
 }
+
+.contacts {
+    padding: 10px 5px;
+    background-color: #8c7a9b44;
+    border-radius: 50%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts > a > img {
+    width: 30px;
+}

@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-
-
 .App {
   text-align: center;
 }
@@ -264,5 +262,128 @@
 @media only screen and (max-width: 690px) {
   .Resumen span {
     font-size: 11px;
+  }
+
+  .section {
+    height: 650px;
+  }
+
+  .greet {
+    font-size: 3em;
+  }
+
+  .typewriter {
+    font-size: 1em;
+  }
+
+  .NavbarWrapper a {
+    font-size: 20px;
+  }
+
+  .sectionTitle {
+    font-size: 2em !important;
+  }
+
+  .subHabilitiesContainer {
+    padding: 0px !important;
+  }
+
+  .habilitiesContainer {
+    grid-template-columns: 1fr 1fr !important;
+    width: 50%;
+    gap: 35px 0px !important;
+  }
+
+  .particles {
+    width: 90px !important;
+    height: 90px !important;
+    margin: 0px !important;
+  }
+
+  .contactContent {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .profileInformation {
+    order: 2 !important;
+  }
+
+  .formContact {
+    order: 1 !important;
+  }
+
+  .imageContainerProfile {
+    height: 120px !important;
+    width: 110px !important;
+    top: 15px !important;
+  }
+
+  .downloadCv {
+    width: 110px !important;
+    height: 20px !important;
+    font-size: 10px !important;
+  }
+
+  .formContact {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: 70px 70px 125px 40px 40px !important;
+  }
+
+  .fullWidth, .email {
+    grid-column: span 2 !important;
+  }
+
+  .formLabel {
+    height: 60px !important;
+  }
+
+  .inputTextarea {
+    height: 60px !important;
+  }
+
+  .formLabelTextarea  {
+    height: 110px !important;
+  }
+
+  .labelText {
+    font-size: 20px !important;
+  }
+
+  .submitInput {
+    font-size: 20px !important;
+  }
+
+  .warningText {
+    font-size: 12px !important;
+  }
+
+  .profileInformation {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 3fr !important;
+    place-content: center !important;
+    place-items: center !important;
+  }
+
+  .contactIcons {
+    margin-bottom: 10px !important;
+  }
+
+  .contactIcons a img {
+    width: 35px !important;
+  }
+
+  .projectDescriptionContainer {
+    height: max-content !important;
+    margin: 50px !important;
+    padding: 50px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px;
+  }
+
+  .closeButtonContainer {
+    top: 50px !important;
+    right: 55px !important;
   }
 }

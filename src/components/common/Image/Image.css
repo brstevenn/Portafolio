@@ -1,3 +1,8 @@
 .imageLogo {
   margin: 1% 2%;
 }
+
+.imageContainerProfile {
+  top: 25px;
+  position: relative;
+}

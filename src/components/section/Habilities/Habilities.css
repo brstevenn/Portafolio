@@ -1,10 +1,11 @@
 .habilities {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1fr;
   margin: 0% 5% 0% 5%;
   height: 100%;
   place-items: center;
   place-content: center;
+  gap: 50px;
 }
 
 .habilitiesTitleContainer {
@@ -25,17 +26,18 @@
 
 .habilitiesContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
   place-content: center;
-  width: 100%;
+  width: 90%;
+  gap: 15% 0%;
 }
 
 .subHabilitiesContainer {
   display: grid;
   grid-template-rows: 70px 1fr;
   grid-template-columns: 1fr;
+  padding: 10px;
 }
 
 .habilitiesTitle {
@@ -115,6 +117,9 @@
   overflow: hidden;
   display: grid;
   place-items: center;
+  background: #ffffff69;
+  border-radius: 15px;
+  margin: 15px 0px;
 }
 
 .particles::before {

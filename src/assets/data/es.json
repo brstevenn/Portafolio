@@ -1,15 +1,39 @@
 {
-  "secciones": ["Habilidades", "Proyectos", "Contacto", "Conectemos"],
+  "secciones": ["Habilidades", "Proyectos", "Contacto", "Conectemos!"],
   "saludo": "Hola!",
   "presentacion": "Soy",
   "presentacionDinamica": ["Bryan Gaitan", "Un Desarrollador Full Stack"],
-  "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "descripcion": "Desarrollador con experiencia en JS (React, NextJS) y C# (ASP.NET), he trabajando tanto en Frontend como en Backend con ambos lenguajes, integrando bases de datos SQL como SQL Sever, PostgreSQL y MySQL",
   "frases": [
     "</>Mi enfoque en el desarrollo es siempre la calidad del código y el rendimiento, y me esfuerzo por seguir las mejores prácticas y tendencias en el desarrollo web.</>",
     "</>Estoy constantemente buscando aprender nuevas habilidades y tecnologías para mejorar mi trabajo y ofrecer soluciones de vanguardia a mis clientes y empleadores. </>",
-    "</> Te gustaria que trabajaramos juntos? Necesitas un Full Stack en tu equipo? Contactame con tu propuesta, estare encantado de escucharla! </>"
+    "</>Te gustaria que trabajaramos juntos? Necesitas un Full Stack en tu equipo? Contactame con tu propuesta, estare encantado de escucharla! </>"
   ],
-  "tecnologias": ["Frontend", "Backend", "Bases de datos", "Herramientas"],
-  "contacto": ["Nombre", "Apellido", "Email", "Escribe aqui tu mensaje"],
-  "adicional": ["Enviar", "Descarga mi cv", "*Estare respondiendo en un lapso de 24hrs"]
+  "tecnologias": ["React", "NextJS", "DotNet", "NodeJS", "MongoDB", "PostgreSQL", "JavaScript", "CSharp", "Python", "SQLServer"],
+  "contacto": ["Nombre", "Apellido", "Email", "Escribe aqui tu mensaje", "Mensaje"],
+  "contactoPlaceHolder": ["Ingrese su"],
+  "adicional": ["Enviar", "Descarga mi cv", "*Estare respondiendo en un lapso de 24hrs"],
+  "experiencia": "Cuento con experiencia trabajando con <p></p>",
+  "proyectos_recientes": {
+    "titulo": "Proyectos recientes",
+    "label": "",
+    "content": {
+      "1": {
+        "name": "Generador de graficos",
+        "description": "Esta aplicacion se encarga de poder generar imagenes basadas en contenido HTML cuyo contenido se obtienes de una base de datos, tambien funciona en sincronia con el bot de whatsapp que se encarga de enviar las imagenes a un usuario correspondiente por whatsapp"
+      },
+      "2": {
+        "name": "Bot de WhatsApp",
+        "description": "Este se encarga de enviar mensajes automatizados o en su defecto especificos, envia tanto texto como imagenes respectivas a usuarios especificos."
+      },
+      "3": {
+        "name": "App lectora de JSON especificos",
+        "description": "Esta app se encarga de leer JSON que vienen de la conexion con socket.io"
+      },
+      "4": {
+        "name": "App emisiones de carbono",
+        "description": "Esta app se encarga de calcular las emisiones de carbono basadas en informacion proporcionada por los usuarios"
+      }
+    }
+  }
 }

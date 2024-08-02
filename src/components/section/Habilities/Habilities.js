@@ -9,49 +9,32 @@ import SectionFooter from "../../common/SectionFooter/SectionFooter";
 function Habilities({ id }) {
   const { language, data, changeLanguage } = useContext(LanguageContext);
 
-  const listOfSkills = [
-    { frontEnd: ["React", "NextJS"] },
-    { backEnd: ["DotNet", "NodeJS"] },
-    { dataBase: ["MongoDB", "PostgreSQL"] },
-    { languages: ["JavaScript", "CSharp", "Python"] }
-  ]
-
   return (
     <section className="section" id={id} >
       <div className="habilities">
-        <div className="habilitiesTitleContainer" >
-          <h1 className="sectionTitle">{data.secciones[0].toUpperCase()}</h1>
-          <Image image={habilities} width={"100%"} />
-        </div>
         <div className="habilitiesContainer">
           {
-            listOfSkills && listOfSkills.map((skill, index) => {
-              let key;
-              let value;
-              Object.entries(skill).forEach(([subKey, subValue]) => {
-                key = subKey;
-                value = subValue;
-              });
+            data.tecnologias && data.tecnologias.map((skill, index) => {
               return (
                 <div className="subHabilitiesContainer" key={index}>
-                  <h2 className="habilitiesTitle">{key.toUpperCase()}</h2>
                   <div className="subHabilitiesImagesContainer" >
-                  {value && value.map(subItem => (
-                    <div className="logo-container">
-                      <div className="particles" id={`particles${subItem}`} style={{'--content': `url(${icons[subItem]})`}}>
-                        {console.log(icons[subItem])}
-                        <Image style="Logo" image={icons[subItem]} content={subItem} width={"100%"} height={"100%"} link="http://google.com" />
+                  <div className="logo-container">
+                      <div className="particles" id={`particles${skill}`} style={{'--content': `url(${icons[skill]})`}}>
+                        <Image styles="Logo" image={icons[skill]} content={skill} width={"100%"} height={"100%"} link="http://google.com" />
                       </div>
                     </div>
-                  ))}
                   </div>
                 </div>
               );
             })
           }
         </div>
+        <div className="habilitiesTitleContainer" >
+          <h1 className="sectionTitle">{data.secciones[0].toUpperCase()}</h1>
+          <Image image={habilities} width={"100%"} />
+        </div>
       </div>
-      <SectionFooter content={data.frases[1]} />
+      <SectionFooter content={data.frases} interval={11} />
     </section >
   );
 }
