@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Header from './components/header/Header/Header';
 import About from "./components/section/About/About";
-import Carousel from './components/section/Carousel/Carousel';
 import Button from './components/common/Button/Button';
 import profilePhoto from "./assets/images/IMG20221101114758.jpg";
 import {
@@ -16,6 +15,7 @@ import './App.css';
 import Habilities from './components/section/Habilities/Habilities';
 import Projects from './components/section/Projects/Projects.js';
 import Main from './components/scene/main/main.js';
+import Contact from './components/section/Contact/Contact.js';
 
 function App() {
   const [actual, setActual] = React.useState(0)
@@ -123,11 +123,12 @@ function App() {
       <Habilities id="Skills" />
       {
         scrollY > screenHeight - 20 &&
-        <Button id="go-to-up" style={'go-to-up'} content={"Up"} onClick={(event) => window.scrollTo({
+        <Button id="go-to-up" styles={'go-to-up'} content={"Up"} onClick={(event) => window.scrollTo({
           top: 0,
           behavior: 'smooth',
         })} />
       }
+      <Contact id="Contact" />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Button.css"
 
-function Button({id, style, onClick, content}) {
+function Button({id, styles, onClick, content}) {
 
   const click = (event) => {
     event.preventDefault();
@@ -9,7 +9,7 @@ function Button({id, style, onClick, content}) {
   }
 
   return (
-    <button id={id} className={`button-${style}`} onClick={click} >{content}</button>
+    <button id={id} className={`button-${styles}`} onClick={click} >{content}</button>
   );
 }
 

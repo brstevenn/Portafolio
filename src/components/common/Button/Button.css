@@ -16,6 +16,7 @@
     font-size: 1em;
     font-weight: bold;
     margin-bottom: 45px;
+    z-index: 100;
 }
 
 .button-go-to-up:hover {

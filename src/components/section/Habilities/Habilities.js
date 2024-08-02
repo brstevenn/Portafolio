@@ -20,7 +20,7 @@ function Habilities({ id }) {
                   <div className="subHabilitiesImagesContainer" >
                   <div className="logo-container">
                       <div className="particles" id={`particles${skill}`} style={{'--content': `url(${icons[skill]})`}}>
-                        <Image style="Logo" image={icons[skill]} content={skill} width={"100%"} height={"100%"} link="http://google.com" />
+                        <Image styles="Logo" image={icons[skill]} content={skill} width={"100%"} height={"100%"} link="http://google.com" />
                       </div>
                     </div>
                   </div>

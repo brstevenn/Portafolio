@@ -1,6 +1,6 @@
 .habilities {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: 0% 5% 0% 5%;
   height: 100%;
   place-items: center;
@@ -26,16 +26,11 @@
 
 .habilitiesContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
   place-content: center;
   width: 90%;
-  background-color: #540892af;
-  border-top-right-radius: 45%;
-  border-bottom-right-radius: 25%;
-  padding-bottom: 15px;
-  border-top-left-radius: 10%;
-  border-bottom-left-radius: 10%;
+  gap: 15% 0%;
 }
 
 .subHabilitiesContainer {
@@ -122,6 +117,9 @@
   overflow: hidden;
   display: grid;
   place-items: center;
+  background: #ffffff69;
+  border-radius: 15px;
+  margin: 15px 0px;
 }
 
 .particles::before {

@@ -12,3 +12,76 @@
   display: grid;
   place-items: center;
 }
+
+.sectionProjectsTitle {
+  margin: 0px;
+  text-align: center;
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projectName {
+  color: whitesmoke;
+  box-shadow: 1px white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.projectsImageContainer {
+  display: grid;
+  justify-items: center;
+  height: 100%;
+}
+
+.imageProjects:hover {
+  cursor: pointer;
+}
+
+.textProjects {
+  margin: 5px 20px;
+  font-size: 1em;
+}
+
+.projectDescriptionContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  position: fixed;
+  top: 0px;
+  background: #000000b6;
+  color: white;
+  left: 0px;
+  padding: 5vh;
+  height: 80vh;
+  margin: 5vh;
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.closeButtonContainer {
+  display: flex;
+  position: fixed;
+  top: 5vh;
+  right: 6vh;
+  place-content: end;
+  height: max-content;
+}
+
+.closeButton {
+  border: none;
+  background-color: transparent;
+  margin: 0px;
+  font-size: 35px;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+}
+
+.projectNameDescription {
+  text-align: center;
+  height: 60px;
+  margin: 0px;
+}

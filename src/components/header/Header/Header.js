@@ -22,17 +22,17 @@ function Header() {
 
   return (
     <header className="HeaderWrapper">
-      <Image image={Logo} width={"40px"} style={"Logo"}/>
+      <Image image={Logo} width={"40px"} styles={"Logo"}/>
       <Navbar />
       <div className="modesButtons" >
         <Button
           onClick={changeLan}
-          style={"traslate"}
+          styles={"traslate"}
           content={
             <Image
               image={traslate}
               width={"30px"}
-              style={"Logo"}
+              styles={"Logo"}
             />
           }
         />

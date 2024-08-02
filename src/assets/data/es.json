@@ -1,5 +1,5 @@
 {
-  "secciones": ["Habilidades", "Proyectos", "Contacto", "Conectemos"],
+  "secciones": ["Habilidades", "Proyectos", "Contacto", "Conectemos!"],
   "saludo": "Hola!",
   "presentacion": "Soy",
   "presentacionDinamica": ["Bryan Gaitan", "Un Desarrollador Full Stack"],
@@ -10,7 +10,8 @@
     "</>Te gustaria que trabajaramos juntos? Necesitas un Full Stack en tu equipo? Contactame con tu propuesta, estare encantado de escucharla! </>"
   ],
   "tecnologias": ["React", "NextJS", "DotNet", "NodeJS", "MongoDB", "PostgreSQL", "JavaScript", "CSharp", "Python", "SQLServer"],
-  "contacto": ["Nombre", "Apellido", "Email", "Escribe aqui tu mensaje"],
+  "contacto": ["Nombre", "Apellido", "Email", "Escribe aqui tu mensaje", "Mensaje"],
+  "contactoPlaceHolder": ["Ingrese su"],
   "adicional": ["Enviar", "Descarga mi cv", "*Estare respondiendo en un lapso de 24hrs"],
   "experiencia": "Cuento con experiencia trabajando con <p></p>",
   "proyectos_recientes": {
@@ -18,20 +19,20 @@
     "label": "",
     "content": {
       "1": {
-        "name": "Graphic generator",
-        "description": ""
+        "name": "Generador de graficos",
+        "description": "Esta aplicacion se encarga de poder generar imagenes basadas en contenido HTML cuyo contenido se obtienes de una base de datos, tambien funciona en sincronia con el bot de whatsapp que se encarga de enviar las imagenes a un usuario correspondiente por whatsapp"
       },
       "2": {
-        "name": "Whatsapp Bot",
-        "description": ""
+        "name": "Bot de WhatsApp",
+        "description": "Este se encarga de enviar mensajes automatizados o en su defecto especificos, envia tanto texto como imagenes respectivas a usuarios especificos."
       },
       "3": {
-        "name": "F1 UDP",
-        "description": ""
+        "name": "App lectora de JSON especificos",
+        "description": "Esta app se encarga de leer JSON que vienen de la conexion con socket.io"
       },
       "4": {
-        "name": "CecodesAPP",
-        "description": ""
+        "name": "App emisiones de carbono",
+        "description": "Esta app se encarga de calcular las emisiones de carbono basadas en informacion proporcionada por los usuarios"
       }
     }
   }
